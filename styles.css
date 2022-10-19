@@ -1,0 +1,206 @@
+/* line 1, styles.less */
+body {
+  background-color: #33778a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/* line 7, styles.less */
+.showBtn {
+  background-color: darkslategrey;
+  color: #ffffff;
+  padding: 0.75rem 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+/* line 18, styles.less */
+.mainProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e8ecd6;
+  color: #0e8181;
+  border: 4px solid #14120f;
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 32, styles.less */
+.mainProduct .article {
+  border: 2px solid darkslategrey;
+  border-radius: 5px;
+  background-color: #33778a;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 43, styles.less */
+.mainProduct .article img {
+  width: 300px;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/* line 48, styles.less */
+.mainProduct .article .aside {
+  height: 30px;
+  width: 100%;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+/* line 58, styles.less */
+#spinner {
+  min-height: 100vh;
+}
+/* line 62, styles.less */
+.lds-roller {
+  margin-top: 50vh;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+/* line 69, styles.less */
+.lds-roller div {
+  -webkit-animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  -webkit-transform-origin: 40px 40px;
+          transform-origin: 40px 40px;
+}
+/* line 73, styles.less */
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+/* line 83, styles.less */
+.lds-roller div:nth-child(1) {
+  -webkit-animation-delay: -0.036s;
+          animation-delay: -0.036s;
+}
+/* line 86, styles.less */
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+/* line 90, styles.less */
+.lds-roller div:nth-child(2) {
+  -webkit-animation-delay: -0.072s;
+          animation-delay: -0.072s;
+}
+/* line 93, styles.less */
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+/* line 97, styles.less */
+.lds-roller div:nth-child(3) {
+  -webkit-animation-delay: -0.108s;
+          animation-delay: -0.108s;
+}
+/* line 100, styles.less */
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+/* line 104, styles.less */
+.lds-roller div:nth-child(4) {
+  -webkit-animation-delay: -0.144s;
+          animation-delay: -0.144s;
+}
+/* line 107, styles.less */
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+/* line 111, styles.less */
+.lds-roller div:nth-child(5) {
+  -webkit-animation-delay: -0.18s;
+          animation-delay: -0.18s;
+}
+/* line 114, styles.less */
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+/* line 118, styles.less */
+.lds-roller div:nth-child(6) {
+  -webkit-animation-delay: -0.216s;
+          animation-delay: -0.216s;
+}
+/* line 121, styles.less */
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+/* line 125, styles.less */
+.lds-roller div:nth-child(7) {
+  -webkit-animation-delay: -0.252s;
+          animation-delay: -0.252s;
+}
+/* line 128, styles.less */
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+/* line 132, styles.less */
+.lds-roller div:nth-child(8) {
+  -webkit-animation-delay: -0.288s;
+          animation-delay: -0.288s;
+}
+/* line 135, styles.less */
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@-webkit-keyframes lds-roller {
+  /* line 140, styles.less */
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  /* line 143, styles.less */
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes lds-roller {
+  /* line 140, styles.less */
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  /* line 143, styles.less */
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

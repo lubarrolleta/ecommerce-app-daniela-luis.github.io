@@ -1,0 +1,147 @@
+body {
+  background-color: #33778a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.showBtn {
+  background-color: darkslategrey;
+  color: #ffffff;
+  padding: 0.75rem 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position:sticky;
+  top: 10px;
+}
+.mainProduct {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background-color: rgb(232, 236, 214);
+  color: rgb(14, 129, 129);
+  border: 4px solid #14120f;
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  .article {
+    // display: inline;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    border: 2px solid darkslategrey;
+    border-radius: 5px;
+    background-color: #33778a;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    img {
+      width: 300px;
+      height: 400px;
+      object-fit: contain;
+    }
+    .aside {
+      height: 30px;
+      width: 100%;
+      color: white;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+  }
+}
+// spienner
+#spinner {
+    min-height: 100vh;
+    // margin-top:50%
+}
+.lds-roller {
+    margin-top: 50vh;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
